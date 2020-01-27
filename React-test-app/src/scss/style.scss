@@ -1,0 +1,38 @@
+@import "variables";
+
+.Greetings {
+	display: flex;
+	flex-direction: column;
+	font-size: 28px;
+	justify-content: center;
+	align-items: center;
+
+	img {
+		width: 400px;
+		height: 400px;
+	}
+}
+
+.center_medium_box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 5px;
+}
+
+.isActive {
+	background: $activeColor;
+	@extend .center_medium_box;
+}
+
+.isEnabled {
+	background: $enabledColor;
+	@extend .center_medium_box;
+}
+
+.isDisabled {
+	background: $disabledColor;
+	@extend .center_medium_box;
+}

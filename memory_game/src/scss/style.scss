@@ -1,0 +1,157 @@
+* {
+	margin: 0;
+	padding: 0;
+	color: #EEE;
+	font-family: $fontFamilyBase;
+}
+
+body {
+	background: #333 url('../img/memory.png') no-repeat;
+	height: 100%;
+	min-height: 100%;
+	width: 100%;
+}
+
+.mainWrapper {
+	display: flex;
+	height: 100vh;
+	width: 100vw;
+	flex-flow: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.memoryField {
+	display: flex;
+	flex-wrap: wrap;
+	background: #555;
+	max-width: 60vh;
+	min-width: 40vh;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+	padding: 15px 0;
+	box-shadow: 2px 2px 2px #111;
+
+	&__card {
+		width: 6em;
+		height: 6em;
+		margin: 5px;
+		background: #A39191;
+		border-radius: 25%;
+		box-shadow: 3px 3px 2px #111;
+
+		&:hover {
+			filter: brightness(85%)
+		}
+	}
+}
+
+.rankingField {
+	background: #555;
+	width: 40vh;
+	max-height: 25vh;
+	border-radius: 2.5%;
+	text-align: center;
+	padding: 5px;
+	box-shadow: 2px 2px 2px #111;
+
+	&__people {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 5px;
+		align-items: center;
+		justify-content: space-evenly;
+
+		&-card {
+			display: flex;
+			flex-flow: column;
+			width: 5em;
+			height: 8em;
+			margin: 2px;
+			font-size: 8px;
+			align-items: center;
+			justify-content: space-evenly;
+
+			&-face {
+				background: #91A391;
+				width: 4em;
+				height: 4em;
+				border-radius: 100%;
+				margin: 2px;
+			}
+		}
+	}
+}
+
+.gamePanel {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 5px;
+	width: 15em;
+	height: 5em;
+	background: #555;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #111;
+}
+
+.gamePanel button {
+	margin: 3px;
+	width: 10em;
+	height: 5em;
+	color: #222;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 12px;
+	text-shadow: 1px 1px 1px #333;
+}
+
+.gamePanel button:focus {
+	filter: brightness(85%)
+}
+
+.gamePanel button:disabled {
+	filter: brightness(50%)
+}
+
+.gamePanel button:hover:enabled {
+	filter: brightness(90%);
+	cursor: pointer;
+}
+
+#consoleField {
+	background: #555;
+	min-height: 15vh;
+	min-width: 60vh;
+	text-shadow: 2px 2px 2px #111;
+	text-align: center;
+	padding: 2px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #111;
+}
+
+.card1:active, .card2:active, .active0, .active1 {
+	background: #4285F4;
+}
+
+.card3:active, .card4:active, .active2, .active3 {
+	background: #DB4437;
+}
+
+.card5:active, .card6:active, .active4, .active5 {
+	background: #F4B400;
+}
+
+.card7:active, .card8:active, .active6, .active7 {
+	background: #0F9D58;
+}
+
+.card9:active, .card10:active, .active8, .active9 {
+	background: #0FF;
+}
+
+.card11:active, .card12:active, .active10, .active11 {
+	background: #FF0090;
+}
